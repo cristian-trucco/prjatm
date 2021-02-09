@@ -12,9 +12,19 @@ public class Atm {
 		//Variaveis recebem valor: literal ou referencia
 		
 		Scanner scan = new Scanner(System.in);
-		int numeroConta = scan.nextInt();
-		System.out.println("O número da conta informado foi: " + numeroConta);
+		int numeroContaDigitado = scan.nextInt();
+		
+		if(contaExiste(numeroContaDigitado)) {
+			System.out.println("Digite seu PIN: ");
+			scan = new Scanner(System.in);
+			int numeroPinDigitado = scan.nextInt();
+		}
+		exibeMainMenu();
+		else {
+		
+		
 		
 	}
 
 }
+	}
